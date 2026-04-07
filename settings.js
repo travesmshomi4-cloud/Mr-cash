@@ -1,5 +1,11 @@
 
-const fs = require('fs');
+const fs = require('fs')
+module.exports = {
+  SESSION_ID: "",  // add your Session Id here
+  OWNER_NUMBER: "", // put your phone number here
+  PREFIX: ".", // prefix (e.g., ., /, !, *)
+  TIMEZONE: "Africa/Kampala" //put your country timeZone....leave blank if u don't know.
+};;
 const path = require('path');
 const { getConfig } = require('./lib/configdb');
 const settings = require('./settingss');
