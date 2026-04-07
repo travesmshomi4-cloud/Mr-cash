@@ -2,9 +2,9 @@
 const fs = require('fs')
 module.exports = {
   SESSION_ID: "",  // add your Session Id here
-  OWNER_NUMBER: "", // put your phone number here
+  OWNER_NUMBER: "", // 22577439189
   PREFIX: ".", // prefix (e.g., ., /, !, *)
-  TIMEZONE: "Africa/Kampala" //put your country timeZone....leave blank if u don't know.
+  TIMEZONE: "Africa/Kampala" //Tanzania/Dodoma
 };;
 const path = require('path');
 const { getConfig } = require('./lib/configdb');
@@ -30,34 +30,34 @@ module.exports = {
   BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",
 
   // ===== OWNER & DEVELOPER SETTINGS =====
-  OWNER_NUMBER: settings.OWNER_NUMBER || process.env.OWNER_NUMBER || "256789966218",
-  OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "ʟᴜᴄᴋʏ ➋➊➑",
-  DEV: process.env.DEV || "256789966218",
-  DEVELOPER_NUMBER: '256789966218@s.whatsapp.net',
+  OWNER_NUMBER: settings.OWNER_NUMBER || process.env.OWNER_NUMBER || "25774391891",
+  OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "traves--org",
+  DEV: process.env.DEV || "255774391891",
+  DEVELOPER_NUMBER: '255774391891@s.whatsapp.net',
   MENU_AUDIO_URL: process.env.MENU_AUDIO_URL || 'https://files.catbox.moe/3v5i11.mp3',
 NEWSLETTER_JID: process.env.NEWSLETTER_JID || '120363420656466131@newsletter',
 
   // ===== AUTO-RESPONSE SETTINGS =====
-  AUTO_REPLY: process.env.AUTO_REPLY || "false",
-  AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
-  AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*Just seen ur status 😆 🤖*",
-  READ_MESSAGE: process.env.READ_MESSAGE || "false",
+  AUTO_REPLY: process.env.AUTO_REPLY || "true",
+  AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "true",
+  AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*seen all😜*",
+  READ_MESSAGE: process.env.READ_MESSAGE || "true",
   REJECT_MSG: process.env.REJECT_MSG || "*📵 Calls are not allowed on this number unless you have permission. 🚫*",
   ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/4itzeu.jpg",
   LIVE_MSG: process.env.LIVE_MSG || "> ʙᴏᴛ ɪs sᴘᴀʀᴋɪɴɢ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ᴀʟɪᴠᴇ\n\n\nᴋᴇᴇᴘ ᴜsɪɴɢ ✦ʟᴜᴄᴋʏ xᴅ✦ ғʀᴏᴍ ʟᴜᴄᴋʏ ᴛᴇᴄʜ ʜᴜʙ  ɪɴᴄ⚡\n\n\n*© ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ\n\n> ɢɪᴛʜᴜʙ :* github.com/Tomilucky218/Lucky-XD2",
 
   // ===== REACTION & STICKER SETTINGS =====
-  AUTO_REACT: process.env.AUTO_REACT || "false",
-  OWNER_REACT: process.env.OWNER_REACT || "false",
+  AUTO_REACT: process.env.AUTO_REACT || "true",
+  OWNER_REACT: process.env.OWNER_REACT || "true",
   CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
   CUSTOM_REACT_EMOJIS: getConfig("CUSTOM_REACT_EMOJIS") || process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",
-  STICKER_NAME: process.env.STICKER_NAME || "ᴋʜᴀɴ-ᴍᴅ",
-  AUTO_STICKER: process.env.AUTO_STICKER || "false",
+  STICKER_NAME: process.env.STICKER_NAME || "traves",
+  AUTO_STICKER: process.env.AUTO_STICKER || "true",
 
   // ===== MEDIA & AUTOMATION =====
-  AUTO_RECORDING: process.env.AUTO_RECORDING || "false",
-  AUTO_TYPING: process.env.AUTO_TYPING || "false",
-  MENTION_REPLY: process.env.MENTION_REPLY || "false",
+  AUTO_RECORDING: process.env.AUTO_RECORDING || "true",
+  AUTO_TYPING: process.env.AUTO_TYPING || "true",
+  MENTION_REPLY: process.env.MENTION_REPLY || "true",
   MENU_IMAGE_URL: getConfig("MENU_IMAGE_URL") || "https://files.catbox.moe/4itzeu.jpg",
 
   // ===== SECURITY & ANTI-FEATURES =====
@@ -66,15 +66,15 @@ NEWSLETTER_JID: process.env.NEWSLETTER_JID || '120363420656466131@newsletter',
   ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false",
   ANTI_LINK: process.env.ANTI_LINK || "true",
   ANTI_VV: process.env.ANTI_VV || "true",
-  DELETE_LINKS: process.env.DELETE_LINKS || "false",
+  DELETE_LINKS: process.env.DELETE_LINKS || "true",
   ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox",
   ANTI_BOT: process.env.ANTI_BOT || "true",
   PM_BLOCKER: process.env.PM_BLOCKER || "true",
 
   // ===== BOT BEHAVIOR & APPEARANCE =====
-  DESCRIPTION: process.env.DESCRIPTION || "*© Powered By Lucky Tech Hub*",
+  DESCRIPTION: process.env.DESCRIPTION || "*© Powered By mrcash Hub*",
   PUBLIC_MODE: process.env.PUBLIC_MODE || "true",
-  ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
+  ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "truee",
   AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false",
   AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
   AUTO_BIO: process.env.AUTO_BIO || "false",
